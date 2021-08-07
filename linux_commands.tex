@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\title{Linux Commands}
+\author{ J P Madarasinghe, P D W Wanniarachchi, L D Deepanjana \\ T D S Wickramasinghe, Y P Ranasinghe}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{man pages (man commands)}
+In Linux, the man command is used to show the user manual for every command that may be executed fro mthe terminal. It displays a thorough view of the command, including the Name, version, Synopsis, Description, Options, Exit status, Return value etc.
+\newline
+\textbf{Syntax : man [options]...[command name]...}
+\newline
+\newline
+\textbf{Synopsis of man command}
+\begin{itemize}
+	\item man -k: This option searches all manuals for the specified command as a regular expression and returns the manual pages with the section number where it was located.
+	\item man -f: This option gives the section in which the given command is present.
+	\item man -a: This option allows us to display all of the accessible intro manual pages sequentially.
+\end{itemize}
+\subsection{whatis command}
+In Linux, the whatis command is used to obtain a one-line explanation of a manual page.
+\newline
+\textbf{Syntax : whatis [options] ... keyword...}
+
+\subsection{whereis command}
+In Linux, whereis command is used to find the location of a source/binary file of a command and manuals section for a specific file.
+\newline
+\textbf{Syntax : whereis [option]...[command name]...}
+
+\subsection{mandb command}
+mandb is used to manually initialize or update index database caches. The caches hold information pretinent to the present state of the manual page system, and the data save inside them is utilized by the man-db tools to improve their preformance and usefulness.
+\newline
+\textbf{Syntax : mandb [filename]}
+
+\end{document}
